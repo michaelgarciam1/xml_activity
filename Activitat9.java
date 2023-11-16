@@ -24,12 +24,12 @@ public class Activitat9 {
             Scanner sc = new Scanner(System.in);
             while (!salir) {
 
-                System.out.println("elige un id para ver el booking , o pon 0 para salir");
+                System.out.println("elige un id para ver el booking , o pon -1 para salir");
                 int num=sc.nextInt();
                 sc.nextLine();
-                if(num!=0){
+                if(num!=-1){
                     try {
-                        System.err.println(listaBooking.get(num));
+                        System.err.println(listaBooking.get(num-1));
                     } catch (Exception e) {
                        System.out.println("error al elegir el ID");
                     }
@@ -39,6 +39,7 @@ public class Activitat9 {
                 }
 
             }
+            sc.close();
 
         } catch (Exception e) {
             e.printStackTrace();

@@ -54,7 +54,7 @@ public class XMLSAXHandler extends DefaultHandler {
             clienteArrayList.add(currentBooking);
         }
     }
-    public ArrayList getClienteArrayList(){
+    public ArrayList<Booking> getClienteArrayList(){
         return clienteArrayList;
     }
 }
